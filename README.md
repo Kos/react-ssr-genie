@@ -34,7 +34,7 @@ POST to the routes to render HTML:
 
 or PDF (see Puppetteer docs for [allowed pageSettings options](https://github.com/GoogleChrome/puppeteer/blob/master/docs/api.md#pagepdfoptions):
 
-    POST /FirstWidget
+    POST /FirstWidget/pdf
     Content-Type: application/json
 
     {
