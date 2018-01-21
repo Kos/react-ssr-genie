@@ -1,5 +1,5 @@
-const React = require('react');
+const { createElement: h } = require('react');
 
 module.exports = function MyWidget() {
-  return React.createElement('h1', {}, 'I am a React component');
+  return h('h1', {}, 'I am a React component');
 };

@@ -1,9 +1,8 @@
 const express = require('express');
-const React = require('react');
-const ReactDOMServer = require('react-dom/server');
+
 const renderToPDF = require('./renderToPDF');
+const renderToString = require('./renderToString');
 const puppeteer = require('puppeteer');
-const { ServerStyleSheet } = require('styled-components');
 
 module.exports = async function serve({ port = 8012, routes = {} }) {
   const app = express();
@@ -35,11 +34,3 @@ module.exports = async function serve({ port = 8012, routes = {} }) {
 
   app.listen(port);
 };
-
-function renderToString(component, props) {
-  const sheet = new ServerStyleSheet();
-  const element = React.createElement(component, props);
-  const markup = ReactDOMServer.renderToStaticMarkup(sheet.collectStyles(element));
-  const styleTags = sheet.getStyleTags();
-  return styleTags + '\n' + markup;
-}

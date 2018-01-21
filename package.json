@@ -7,7 +7,8 @@
   "scripts": {
     "lint": "eslint .",
     "lint:fix": "yarn lint -- --fix",
-    "demo": "nodemon demo/demo.js"
+    "demo": "nodemon demo/demo.js",
+    "test": "jest"
   },
   "devDependencies": {
     "@codility/eslint-config-codility": "^1.0.2",
@@ -16,6 +17,7 @@
     "eslint-config-prettier": "^2.9.0",
     "eslint-plugin-prettier": "^2.5.0",
     "eslint-plugin-react": "^7.5.1",
+    "jest": "^22.1.4",
     "nodemon": "^1.14.11",
     "prettier": "^1.10.2"
   },

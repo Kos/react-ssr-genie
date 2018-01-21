@@ -1,0 +1,29 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`renderToString should render a styled component 1`] = `
+"<style type=\\"text/css\\" data-styled-components=\\"hdntL\\" data-styled-components-is-local=\\"true\\">/* sc-component-id: sc-bdVaJa */
+.sc-bdVaJa {}
+
+.hdntL{background:pink;}
+</style>
+<div class=\\"sc-bdVaJa hdntL\\"></div>"
+`;
+
+exports[`renderToString should render a styled component with a prop 1`] = `
+"<style type=\\"text/css\\" data-styled-components=\\"cfPElA\\" data-styled-components-is-local=\\"true\\">/* sc-component-id: sc-bdVaJa */
+.sc-bdVaJa {}
+
+.cfPElA{background:hotpink;}
+</style>
+<div class=\\"sc-bdVaJa cfPElA\\"></div>"
+`;
+
+exports[`renderToString should render with default props 1`] = `
+"<style type=\\"text/css\\" data-styled-components=\\"\\" data-styled-components-is-local=\\"true\\"></style>
+<div>Hello</div>"
+`;
+
+exports[`renderToString should render with interesting props 1`] = `
+"<style type=\\"text/css\\" data-styled-components=\\"\\" data-styled-components-is-local=\\"true\\"></style>
+<div style=\\"font-weight:bold\\">changes</div>"
+`;
