@@ -11,6 +11,41 @@ Given a bunch of React components, I'd like to have a HTTP service that will ren
 1. allow a non-Node webapp to enjoy some server-side rendering
 2. generate beautiful PDF versions of React-powered pages on the backend
 
+## Usage
+
+Define the server with the routes, one route per React component you wish to have rendered:
+
+    genie({
+      routes: {
+        '/FirstWidget': require('./FirstWidget'),
+        '/SecondWidget': require('./SecondWidget'),
+        // ..
+      },
+    });
+
+POST to the routes to render HTML:
+
+    POST /FirstWidget
+    Content-Type: application/json
+
+    {
+      "props": { ... }
+    }
+
+or PDF (see Puppetteer docs for [allowed pageSettings options](https://github.com/GoogleChrome/puppeteer/blob/master/docs/api.md#pagepdfoptions):
+
+    POST /FirstWidget
+    Content-Type: application/json
+
+    {
+      "props": { ... },
+      "pageSettings": {
+        "format": "A4",
+        "printBackground: true,
+        "landscape": false,
+      }
+    }
+
 ## Fun facts
 
 [`styled-components`][styled-components] are supported out of the box.
