@@ -8,7 +8,8 @@
     "lint": "eslint .",
     "lint:fix": "yarn lint -- --fix",
     "demo": "nodemon demo/demo.js",
-    "test": "jest"
+    "test": "jest",
+    "test-ci": "yarn lint && yarn test"
   },
   "devDependencies": {
     "@codility/eslint-config-codility": "^1.0.2",
