@@ -1,6 +1,6 @@
 # React SSR Genie
 
-A simple tool for simple server-side rendering needs...
+A simple tool for simple server-side rendering needs
 
 Status: **experimental**
 
@@ -34,7 +34,7 @@ See [`demo.js`][demo]
 * [ ] jest
 * [ ] test out in the real world, do some stress testing...
 
-[demo]: src/demo.js
+[demo]: demo/demo.js
 [puppeteer]: https://github.com/GoogleChrome/puppeteer/
 [styled-components]: https://www.styled-components.com/
 [hypernova]: https://github.com/airbnb/hypernova
