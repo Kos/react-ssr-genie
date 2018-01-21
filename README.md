@@ -13,13 +13,13 @@ Given a bunch of React components, I'd like to have a HTTP service that will ren
 
 ## Usage
 
-Define the server with the routes, one route per React component you wish to have rendered:
+Start the server; define one route per React component you'd like to have rendered:
 
     genie({
       routes: {
         '/FirstWidget': require('./FirstWidget'),
         '/SecondWidget': require('./SecondWidget'),
-        // ..
+        // ...
       },
     });
 
@@ -29,20 +29,20 @@ POST to the routes to render HTML:
     Content-Type: application/json
 
     {
-      "props": { ... }
+      "props": { /* ... */ }
     }
 
-or PDF (see Puppetteer docs for [allowed pageSettings options](https://github.com/GoogleChrome/puppeteer/blob/master/docs/api.md#pagepdfoptions):
+or PDF (see Puppetteer docs for [allowed pageSettings options](https://github.com/GoogleChrome/puppeteer/blob/master/docs/api.md#pagepdfoptions)):
 
     POST /FirstWidget/pdf
     Content-Type: application/json
 
     {
-      "props": { ... },
+      "props": { /* ... */ },
       "pageSettings": {
         "format": "A4",
         "printBackground: true,
-        "landscape": false,
+        "landscape": false
       }
     }
 
