@@ -6,6 +6,9 @@ const defaultPageSettings = {
     bottom: '1cm',
     left: '1cm',
   },
+  printBackground: true,
+  displayHeaderFooter: false,
+  landscape: false,
 };
 
 module.exports = async function renderToPDF(content, pageSettings, browser) {
