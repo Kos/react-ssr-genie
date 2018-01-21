@@ -29,9 +29,9 @@ See [`demo.js`][demo]
 
 * [x] render text/html
 * [x] render applicaiton/pdf
-* [ ] allow specifying props
-* [ ] allow specifying page setup
-* [ ] jest
+* [x] allow specifying props
+* [x] allow specifying page setup
+* [ ] proper tests
 * [ ] test out in the real world, do some stress testing...
 
 [demo]: demo/demo.js
