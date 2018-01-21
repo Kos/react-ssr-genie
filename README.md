@@ -8,8 +8,8 @@ Status: **experimental**
 
 Given a bunch of React components, I'd like to have a HTTP service that will render them for me with given `props`, as `text/html` or `application/pdf`, in order to...
 
-a. allow a non-Node webapp to enjoy some server-side rendering
-b. generate beautiful PDF versions of React-powered pages on the backend
+1. allow a non-Node webapp to enjoy some server-side rendering
+2. generate beautiful PDF versions of React-powered pages on the backend
 
 ## Fun facts
 
