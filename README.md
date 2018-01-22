@@ -1,5 +1,8 @@
 # React SSR Genie
 
+[![Build Status](https://travis-ci.org/Kos/react-ssr-genie.svg?branch=master)](https://travis-ci.org/Kos/react-ssr-genie)
+![Experimental](https://img.shields.io/badge/status-experimental-red.svg)
+
 A simple tool for simple server-side rendering needs
 
 Status: **experimental**
