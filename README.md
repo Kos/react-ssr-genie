@@ -5,8 +5,6 @@
 
 A simple tool for simple server-side rendering needs
 
-Status: **experimental**
-
 ## The story
 
 Given a bunch of React components, I'd like to have a HTTP service that will render them for me with given `props`, as `text/html` or `application/pdf`, in order to...
